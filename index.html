@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Querying by Vocal Imitation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Querying by Vocal Imitation</h1>
+							<p>AES AIMLA Challenge 2025</p>
+						</div>
+
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-info-circle">Challenge Description</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-file-alt">Submissions</span></a></li>
+								<li><a href="#baselines" id="baselines-link"><span class="icon solid fa-chart-bar">Baselines</span></a></li>
+								<li><a href="#team" id="team-link"><span class="icon solid fa-users">Team Members</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>					
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+					<ul class="icons">
+						<li><a href="https://x.com/QvimA10120" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/AES.org" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/qvim-aes" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:qvim.aes@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<section id="top" class="one cover">
+					<div class="container">
+				
+						<header>
+							<img src="images/challengeintro.jpg" alt="Querying by Vocal Imitation 2025 Challenge" style="max-width: 100%; height: auto;" />
+						</header>
+				
+						<footer>
+							<a href="#portfolio" class="button scrolly"> Learn more</a>
+						</footer>
+				
+					</div>
+				</section>
+
+				<!-- Challenge Description -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Challenge Description</h2>
+							</header>
+
+							<p>Query by Vocal Imitation enables users to search a database of sounds by recording a vocal impression of the
+								desired sound. The system then retrieves sounds similar to the users recording. This offers sound designers an
+								intuitively expressive way of navigating large sound effects databases. We invite participants to submit systems that
+								accept a vocal imitation query and retrieve a perceptually similar recording from a large database of sound effects.
+								Final rankings of submissions will be determined by a subjective evaluation using a larger, unlabeled dataset.</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										
+	
+									</article>
+									<article class="item">
+									
+									</article>
+								</div>
+								
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Submissions -->
+
+				<section id="submissions" class="three">
+					<div class="container">
+						<header>
+							<h2>Submissions</h2>
+						</header>
+				
+						<p>
+							Participants are required to submit a technical report detailing the datasets and methods used in development, as well as a Colab notebook containing the system itself. Submitted systems need to perform two specific tasks:
+						</p>
+				
+						<ul>
+							<li>
+								<strong>Task 1:</strong> Given an arbitrarily large dataset of sound recordings, generate representations for each recording.
+							</li>
+							<li>
+								<strong>Task 2:</strong> Using the previously generated representations and a set of vocal imitation queries, return three recordings from the dataset that best match the query.
+							</li>
+						</ul>
+				
+						<p>
+							Detailed instructions are provided in Colab templates containing the baseline implementations. The submissions will be opened two weeks before the challenge deadline, during which time participants will be able to submit their system to check that their submitted code is running correctly. Each team may submit up to three different systems.
+						</p>
+				
+						<ul class="icons">
+							<li><a href="https://github.com/qvim-aes/qvim-submission" class="icon brands fa-github"><span class="label">GitHub Repo for submissions</span></a></li>
+
+							
+						</ul>
+					</div>
+				</section>
+				
+
+		<!-- Baselines -->
+<section id="baselines" class="four">
+    <div class="container">
+        <header>
+            <h2>Baselines</h2>
+        </header>
+
+        <p>
+            We provide implementations of two baselines. Both systems rank the sounds in the database according to their cosine similarity to the query in a shared feature space:
+        </p>
+
+        <ul>
+            <li>
+                <strong>M-VGGish:</strong> Extracts features from the intermediate layers of a pretrained VGGish model. 
+                <a href="https://research.google.com/audioset/vggish.html" target="_blank">Learn more about VGGish</a>.
+            </li>
+            <li>
+                <strong>2DFT:</strong> A purely signal-processing-based representation, calculated as the 2D Fourier transform of the constant-Q transform of the audio signal.
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Team Members -->
+<section id="team" class="five">
+    <div class="container">
+        <header>
+            <h2>Team Members</h2>
+        </header>
+        <header>
+			<img src="images/team.jpg" alt="Team Members Challenge 2025" style="max-width: 100%; height: auto;" />
+		</header>
+
+    </div>
+</section>
+
+
+				<!-- Contact -->
+					<section id="contact" class="six">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Got any questions?
+							</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
