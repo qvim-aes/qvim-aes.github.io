@@ -768,7 +768,7 @@ input, select, textarea {
 				}
 
 				.row.aln-center {
-					justify-content: center;
+					justify-content: justify;
 				}
 
 				.row.aln-right {
@@ -780,7 +780,7 @@ input, select, textarea {
 				}
 
 				.row.aln-middle {
-					align-items: center;
+					align-items: justify;
 				}
 
 				.row.aln-bottom {
