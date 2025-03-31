@@ -121,7 +121,7 @@
 						</header>
 				
 						<p>
-							Participants are required to submit a technical report detailing the datasets and methods used in development, as well as a Colab notebook containing the system itself.
+							Participants are required to submit a technical report detailing the datasets and methods used in development, as well as a Collab notebook containing the system itself.
 						</p>
 				
 						<ul>
@@ -168,6 +168,35 @@
 				<a href="https://arxiv.org/abs/1001.1955" target="_blank">Learn more about 2DFT</a>.
             </li>
         </ul>
+		<p>Also, here's a list of pre-trained audio embedding models that participants might find interesting.</p>
+		<ul>
+            <li>
+                <strong>Mobile-Net:</strong> Extracts features via a dual-encoder architecture consisting of two MobileNets pre-trained on AudioSet and fine-tuned on vocal imitations via contrastive learning. 
+                <a href="https://ieeexplore.ieee.org/document/7952261" target="_blank">Learn more about MobileNet</a>.
+            </li>
+            <li>
+                <strong>2DFT:</strong> A purely signal-processing-based representation, calculated as the 2D Fourier transform of the constant-Q transform of the audio signal.
+                <a href="https://arxiv.org/abs/1001.1955" target="_blank">Learn more about 2DFT</a>.
+            </li>
+            <li>
+                <strong>AST:</strong> <a href="https://github.com/YuanGongND/ast" target="_blank">https://github.com/YuanGongND/ast</a>
+            </li>
+            <li>
+                <strong>BEATs:</strong> <a href="https://github.com/microsoft/unilm/tree/master/beats" target="_blank">https://github.com/microsoft/unilm/tree/master/beats</a>
+            </li>
+            <li>
+                <strong>EfficientAT:</strong> <a href="https://github.com/fschmid56/EfficientAT" target="_blank">https://github.com/fschmid56/EfficientAT</a>
+            </li>
+            <li>
+                <strong>PaSST:</strong> <a href="https://github.com/kkoutini/PaSST" target="_blank">https://github.com/kkoutini/PaSST</a>
+            </li>
+            <li>
+                <strong>BYOL-A:</strong> <a href="https://github.com/nttcslab/byol-a" target="_blank">https://github.com/nttcslab/byol-a</a>
+            </li>
+            <li>
+                <strong>PANNs:</strong> <a href="https://zenodo.org/records/3987831" target="_blank">https://zenodo.org/records/3987831</a>
+            </li>
+        </ul>
     </div>
 
 </section>
@@ -179,14 +208,20 @@
         <header>
             <h2 class="text-4xl font-bold">Datasets</h2>
         </header>
-        <p>We provide two datasets. They are available for download in the following links:</p>
+		<p>Participants are welcome and encouraged to utilize any publicly available dataset. <strong>We DO NOT encourage the use of private datasets.</strong> </p>
+		<p>Public Datasets:</p>
+		<ul>
+			<li><strong>VocalSketch:</strong> <a href="https://zenodo.org/records/1251982" target="_blank">https://zenodo.org/records/1251982</a></li>
+            <li><strong>Vocal Imitation Set:</strong> <a href="https://zenodo.org/records/1340763" target="_blank">https://zenodo.org/records/1340763</a></li>
+            <li><strong>VimSketch (VocalSketch+Vocal Imitation Set):</strong> <a href="https://zenodo.org/records/2596911" target="_blank">https://zenodo.org/records/2596911</a></li>
+            <li><strong>AudioSet:</strong> <a href="https://research.google.com/audioset/" target="_blank">https://research.google.com/audioset/</a></li>
+		</ul>
+        <p>We provide a development dataset, available for download in the following link:</p>
         <ul>
-            <li><strong>DEV:</strong> Used for objective performance evaluation, containing vocal imitations based on reference recordings.  
+            <li><strong>DEV:</strong> Used for objective performance evaluation, containing 1000 samples of vocal imitations based on reference recordings.  
                 <a href="https://drive.google.com/file/d/1-pR11N2m0mP8e20pxTYr2AQvfdNVExsc/view?usp=sharing" target="_blank">Download DEV Dataset</a>.
             </li>
-            <li><strong>VAL:</strong> An evaluation dataset of vocal imitations that are not directly based on a reference sound.  
-                <a href="https://drive.google.com/file/d/1k5PQD5Wf38dF1PQbM-Yu3TbGtD4TTgnj/view?usp=sharing" target="_blank">Download VAL Dataset</a>.
-            </li>
+            
         </ul>
     </div>
 </section>
