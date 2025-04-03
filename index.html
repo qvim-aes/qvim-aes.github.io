@@ -156,11 +156,16 @@
         </header>
 
         <p>
-            We provide implementations of two baselines. Both systems rank the sounds in the database:
+           We provide a repository containing the baseline system for the AES AIMLA Challenge 2025. The architecture and the training procedure is based on <a href="https://dcase.community/documents/workshop2024/proceedings/DCASE2024Workshop_Greif_36.pdf " target="_blank"> "Improving Query-by-Vocal Imitation with Contrastive Learning and Audio Pretraining" (DCASE2025 Workshop)</a>.
+		   Check the repository for the details of the baseline system. Here: <a href="https://github.com/qvim-aes/qvim-baseline" target="_blank">Baseline of QVIM</a>.
         </p>
 
         <ul>
-            <li>
+            
+        </ul>
+		<p>Also, here's a list of pre-trained audio embedding models that participants might find interesting.</p>
+		<ul>
+			<li>
                 <strong>Mobile-Net:</strong> : Extracts features via a dual-encoder architecture consisting of two MobileNets pre-trained on AudioSet and fine-tuned on vocal imitations via contrastive learning. 
                 <a href="https://ieeexplore.ieee.org/document/7952261" target="_blank">Learn more about MobileNet</a>.
             </li>
@@ -168,9 +173,6 @@
                 <strong>2DFT:</strong> A purely signal-processing-based representation, calculated as the 2D Fourier transform of the constant-Q transform of the audio signal.
 				<a href="https://arxiv.org/abs/1001.1955" target="_blank">Learn more about 2DFT</a>.
             </li>
-        </ul>
-		<p>Also, here's a list of pre-trained audio embedding models that participants might find interesting.</p>
-		<ul>
             <li>
                 <strong>AST:</strong> <a href="https://github.com/YuanGongND/ast" target="_blank">https://github.com/YuanGongND/ast</a>
             </li>
